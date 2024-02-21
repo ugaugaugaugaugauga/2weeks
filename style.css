@@ -54,10 +54,8 @@ nav {
   width: 133px;
   height: 24px;
 }
-.btn-bg-blue-to-cyan {
-  background: linear-gradient(to right, var(--primary), #6ae3fe);
-}
 .nav-login {
+  background: linear-gradient(to right, var(--primary), #6ae3fe);
   height: 53px;
   width: 128px;
   padding: 16px 20px;
@@ -66,6 +64,7 @@ nav {
 }
 
 .hero-link {
+  background: linear-gradient(to right, var(--primary), #6ae3fe);
   margin-top: 48px;
   width: 350px;
   height: 53px;
