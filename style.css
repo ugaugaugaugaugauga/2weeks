@@ -27,7 +27,9 @@ a {
 
 button {
   cursor: pointer;
+  color: var(--white);
 }
+
 header {
   display: flex;
   background: var(--gray6);
@@ -39,8 +41,8 @@ header {
 nav {
   height: 93px;
   width: 100%;
-  position: fixed;
   max-width: 1920px;
+  position: fixed;
   padding: 0 200px;
   display: flex;
   justify-content: space-between;
@@ -52,14 +54,24 @@ nav {
   width: 133px;
   height: 24px;
 }
+.btn-bg-blue-to-cyan {
+  background: linear-gradient(to right, var(--primary), #6ae3fe);
+}
 .nav-login {
   height: 53px;
   width: 128px;
-  background: linear-gradient(to right, var(--primary), #6ae3fe);
   padding: 16px 20px;
   border-radius: 8px;
   font-size: 18px;
-  color: var(--white);
+}
+
+.hero-link {
+  margin-top: 48px;
+  width: 350px;
+  height: 53px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 18px;
 }
 
 .hero-header {
@@ -70,21 +82,37 @@ nav {
   font-weight: 700;
   text-align: center;
 }
-.hero-header > h1 > span {
+
+.text-gradient-blue-to-orange {
   background: linear-gradient(91.26deg, var(--primary) 17.28%, #ff9f9f 74.98%);
   background-clip: text;
   color: transparent;
 }
-.hero-link {
-  margin-top: 48px;
-  width: 350px;
-  height: 53px;
-  border-radius: 8px;
-  padding: 16px 20px;
-  background: linear-gradient(to right, var(--primary), #6ae3fe);
-  font-size: 18px;
-  color: var(--white);
+.text-gradient-red-to-blue {
+  background: linear-gradient(95.63deg, #fe8a8a 1.72%, #a4ceff 74.97%);
+  background-clip: text;
+  color: transparent;
 }
+.text-gradient-blue-to-yellow {
+  background: linear-gradient(277.01deg, #6fbaff 59.22%, #ffd88b 93.66%);
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-blue-to-dark {
+  background: linear-gradient(
+    99.5deg,
+    #6d7ccd 19.76%,
+    rgba(82, 136, 133, 0.22) 52.69%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-red-to-cyan {
+  background: linear-gradient(271.36deg, #fe578f -119.84%, #68e8f9 107.18%);
+  background-clip: text;
+  color: transparent;
+}
+
 .hero-img {
   position: absolute;
   bottom: 0;
@@ -96,7 +124,6 @@ nav {
 main {
   display: flex;
   justify-content: center;
-  margin-bottom: 180px;
 }
 .contents {
   width: 998px;
@@ -117,33 +144,15 @@ main {
   font-size: 48px;
   font-weight: 700;
 }
-.content-text > h2 > span {
-  background-clip: text;
-  color: transparent;
-}
-.highlight-red-to-blue {
-  background: linear-gradient(95.63deg, #fe8a8a 1.72%, #a4ceff 74.97%);
-}
-.highlight-blue-to-yellow {
-  background: linear-gradient(277.01deg, #6fbaff 59.22%, #ffd88b 93.66%);
-}
-.highlight-blue-to-dark {
-  background: linear-gradient(
-    99.5deg,
-    #6d7ccd 19.76%,
-    rgba(82, 136, 133, 0.22) 52.69%
-  );
-}
-.highlight-red-to-cyan {
-  background: linear-gradient(271.36deg, #fe578f -119.84%, #68e8f9 107.18%);
-}
+
 .content-text > p {
   margin-top: 24px;
   color: #6b6b6b;
   font-size: 16px;
-  font-weight: 400;
 }
+
 footer {
+  margin-top: 180px;
   height: 160px;
   color: var(--white);
   background-color: var(--black);
