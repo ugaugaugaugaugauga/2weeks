@@ -67,7 +67,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  background: var(--gray6);
+  background: var(--red);
 }
 .nav-logo {
   width: 133px;
