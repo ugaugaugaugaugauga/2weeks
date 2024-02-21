@@ -24,27 +24,6 @@ a {
   text-decoration: none;
   color: var(--white);
 }
-#span1 {
-  background: linear-gradient(277.01deg, #6fbaff 59.22%, #ffd88b 93.66%);
-  background-clip: text;
-  color: transparent;
-}
-
-#span2 {
-  background: linear-gradient(
-    99.5deg,
-    #6d7ccd 19.76%,
-    rgba(82, 136, 133, 0.22) 52.69%
-  );
-  background-clip: text;
-  color: transparent;
-}
-
-#span3 {
-  background: linear-gradient(271.36deg, #fe578f -119.84%, #68e8f9 107.18%);
-  background-clip: text;
-  color: transparent;
-}
 
 button {
   cursor: pointer;
@@ -67,7 +46,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  background: var(--red);
+  background: var(--gray6);
 }
 .nav-logo {
   width: 133px;
@@ -139,9 +118,24 @@ main {
   font-weight: 700;
 }
 .content-text > h2 > span {
-  background: linear-gradient(95.63deg, #fe8a8a 1.72%, #a4ceff 74.97%);
   background-clip: text;
   color: transparent;
+}
+.highlight-red-to-blue {
+  background: linear-gradient(95.63deg, #fe8a8a 1.72%, #a4ceff 74.97%);
+}
+.highlight-blue-to-yellow {
+  background: linear-gradient(277.01deg, #6fbaff 59.22%, #ffd88b 93.66%);
+}
+.highlight-blue-to-dark {
+  background: linear-gradient(
+    99.5deg,
+    #6d7ccd 19.76%,
+    rgba(82, 136, 133, 0.22) 52.69%
+  );
+}
+.highlight-red-to-cyan {
+  background: linear-gradient(271.36deg, #fe578f -119.84%, #68e8f9 107.18%);
 }
 .content-text > p {
   margin-top: 24px;
