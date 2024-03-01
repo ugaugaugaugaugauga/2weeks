@@ -53,11 +53,12 @@
   font-size: 48px;
 }
 
-.text-md {
-  font-size: 16px;
-}
 .text-sm {
   font-size: 14px;
+}
+
+.text-md {
+  font-size: 16px;
 }
 
 .text-lg {
@@ -133,7 +134,7 @@
   background-color: var(--black);
 }
 
-.order-1 {
+.desktop-order {
   order: -1;
 }
 

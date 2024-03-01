@@ -7,10 +7,33 @@
   width: 240px;
 }
 
+.hero-header {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
 .btn {
   width: 128px;
   height: 53px;
   border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn-wide {
+  width: 350px;
+}
+
+.content-header {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.content-body {
+  margin-top: 12px;
+  font-size: 16px;
 }
 
 .img-box {
@@ -28,6 +51,7 @@
 }
 
 .auth-input {
+  margin-top: 12px;
   padding: 18px 15px;
   border: 1px var(--gray-400) solid;
   border-radius: 8px;

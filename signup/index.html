@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="bg-gray-100">
-    <main class="auth-container mt-60">
-      <header class="flex-col items-center gap-y-5 text-md">
+    <main class="auth-container">
+      <header class="auth-header-container text-md">
         <a href="/"><img class="logo-lg" src="/imgs/logo.png" /></a>
         <div>
           이미 회원이신가요?
@@ -23,42 +23,40 @@
           >
         </div>
       </header>
-      <form class="mt-10 auth-form-container" action="">
-        <div class="flex-col">
+      <form class="auth-form-container" action="">
+        <div class="auth-input-container">
           <label class="text-sm" for="email">이메일</label>
           <input
-            class="mt-3 auth-input"
+            class="auth-input"
             id="email"
             type="text"
             placeholder="codeit@codeit.com"
           />
         </div>
-        <div class="flex-col mt-5 relative">
+        <div class="auth-input-container relative">
           <label class="text-sm" for="password">비밀번호</label>
           <input
-            class="mt-3 auth-input"
+            class="auth-input"
             id="password"
             type="password"
             placeholder="********"
           />
           <img class="icon-eye-box" src="imgs/eye-off.png" alt="eye-off" />
         </div>
-        <div class="flex-col mt-5 relative">
+        <div class="auth-input-container relative">
           <label class="text-sm" for="password">비밀번호 확인</label>
           <input
-            class="mt-3 auth-input"
+            class="auth-input"
             id="password"
             type="password"
             placeholder="********"
           />
           <img class="icon-eye-box" src="imgs/eye-off.png" alt="eye-off" />
         </div>
-        <button
-          class="mt-8 btn w-full bg-blue-to-cyan text-white font-weight-600"
-        >
+        <button class="mt-8 btn w-full bg-blue-to-cyan text-white">
           회원가입
         </button>
-        <footer class="mt-8 auth-footer-container bg-gray-200">
+        <footer class="auth-footer-container bg-gray-200">
           <span class="text-sm">다른 방식으로 가입하기</span>
           <div class="flex">
             <a class="mr-3" href="https://www.google.com/"

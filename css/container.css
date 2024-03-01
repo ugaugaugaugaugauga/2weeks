@@ -14,6 +14,7 @@
 }
 
 .main-container {
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,28 +29,46 @@
 }
 
 .footer-container {
+  margin-top: 120px;
   padding: 0 104px;
   height: 160px;
 }
 
 .footer-items-container {
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
 .auth-container {
+  margin-top: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.auth-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
 .auth-form-container {
+  margin-top: 20px;
   width: 400px;
   display: flex;
   flex-direction: column;
 }
 
+.auth-input-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .auth-footer-container {
+  margin-top: 24px;
   display: flex;
   padding: 12px 24px;
   border-radius: 8px;
