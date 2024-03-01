@@ -135,7 +135,7 @@
 }
 
 .desktop-order {
-  order: -1;
+  order: none;
 }
 
 .relative {
@@ -165,4 +165,16 @@
 
 .gap-y-5 {
   row-gap: 20px;
+}
+
+.desktop-align {
+  justify-self: none;
+}
+@media (min-width: 768px) {
+  .desktop-align {
+    justify-self: end;
+  }
+  .desktop-order {
+    order: -1;
+  }
 }

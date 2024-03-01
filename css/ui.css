@@ -1,6 +1,5 @@
 .logo {
   width: 133px;
-  height: 24px;
 }
 
 .logo-lg {
@@ -10,7 +9,7 @@
 .hero-header {
   margin-top: 40px;
   text-align: center;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -23,11 +22,11 @@
 }
 
 .btn-wide {
-  width: 350px;
+  width: 200px;
 }
 
 .content-header {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -37,9 +36,13 @@
 }
 
 .img-box {
-  width: 550px;
-  height: 450px;
+  margin-top: 30px;
+  width: auto;
   border-radius: 15px;
+}
+
+.text-box {
+  width: none;
 }
 
 .icon-eye-box {
@@ -60,4 +63,37 @@
 .auth-input:focus {
   outline: none;
   border-color: var(--primary);
+}
+
+.footer-label-pos {
+  position: absolute;
+  top: 110px;
+}
+
+@media (min-width: 768px) {
+  .img-box {
+    margin-top: none;
+    width: 550px;
+    height: 450px;
+  }
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .btn-wide {
+    width: 350px;
+  }
+  .hero-header {
+    font-size: 48px;
+  }
+  .content-header {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .text-box {
+    width: 322px;
+  }
+  .footer-label-pos {
+    position: static;
+  }
 }
