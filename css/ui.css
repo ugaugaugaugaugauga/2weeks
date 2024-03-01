@@ -48,6 +48,9 @@
 .icon-eye-box {
   width: 16px;
   height: 16px;
+}
+
+.icon-eye-box-pos {
   position: absolute;
   bottom: 23px;
   right: 18px;
