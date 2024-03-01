@@ -3,106 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/ui.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/preflight.css" />
+    <link rel="stylesheet" href="/css/container.css" />
+    <!-- 우선순위 1 -->
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>Linkbrary</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/"><img class="nav-logo" src="imgs/logo.png" /></a>
-        <a href="/signin/index.html">
-          <button class="nav-login bg-blue-to-cyan">로그인</button></a
+    <nav class="nav-container bg-gray-100">
+      <a href="/"><img class="logo-md" src="imgs/logo.png" /></a>
+      <a href="/signin/index.html">
+        <button class="btn text-white font-weight-600 text-lg bg-blue-to-cyan">
+          로그인
+        </button></a
+      >
+    </nav>
+    <header class="hero-container bg-gray-100">
+      <h1 class="text-center text-4xl font-weight-700 mt-10">
+        <span class="text-gradient-purple-to-pink">세상의 모든 정보</span
+        >를<br />
+        쉽게 저장하고 관리해 보세요
+      </h1>
+      <a href="signup/index.html" class="mt-5">
+        <button
+          class="btn w-350 text-white font-weight-600 text-lg bg-blue-to-cyan"
         >
-      </nav>
-      <section class="hero-header">
-        <h1>
-          <span class="text-gradient-blue-to-orange">세상의 모든 정보</span
-          >를<br />
-          쉽게 저장하고 관리해 보세요
-        </h1>
-        <a href="signup/index.html">
-          <button class="hero-link bg-blue-to-cyan">링크 추가하기</button>
-        </a>
-      </section>
-      <img class="hero-img" src="imgs/hero.png" alt="hero" />
+          링크 추가하기
+        </button>
+      </a>
+      <img class="mt-10" src="imgs/hero.png" alt="hero" />
     </header>
-    <main>
-      <div class="contents">
-        <section class="content">
-          <div class="content-text">
-            <h2>
-              <span class="text-gradient-red-to-blue">원하는 링크</span>를<br />
-              저장하세요
-            </h2>
-            <p>
-              나중에 릭고싶은 글, 다시보고싶은 영상,<br />
-              사고싶은 옷, 기억하고 싶은 모든 것을<br />
-              한 공간에 저장하세요.
-            </p>
-          </div>
-          <img class="img-container" src="imgs/content1.png" alt="content1" />
-        </section>
-        <section class="content">
-          <img class="img-container" src="imgs/content2.png" alt="content2" />
-          <div class="content-text">
-            <h2>
-              링크를 폴더로<br /><span class="text-gradient-blue-to-yellow"
-                >관리</span
-              >하세요
-            </h2>
-            <p>
-              나만의 폴더를 무제한으로 만들고<br />
-              다양하게 활용할 수 있습니다.
-            </p>
-          </div>
-        </section>
-        <section class="content">
-          <div class="content-text">
-            <h2>
-              저장한 링크를<br /><span class="text-gradient-blue-to-dark"
-                >공유</span
-              >해 보세요.
-            </h2>
-            <p>
-              여러 링크를 폴더에 담고 공유할 수 있습니다. 가족, 친구, 동료들에게
-              쉽고 빠르게 링크를 공유해 보세요.
-            </p>
-          </div>
-          <img class="img-container" src="imgs/content3.png" alt="content3" />
-        </section>
-        <section class="content">
-          <img class="img-container" src="imgs/content4.png" alt="content4" />
-          <div class="content-text">
-            <h2>
-              저장한 링크를<br /><span class="text-gradient-red-to-cyan"
-                >검색</span
-              >해 보세요
-            </h2>
-            <p>중요한 정보들을 검색으로 쉽게 찾아보세요.</p>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <section>
-        <span class="publish">@codeit - 2023</span>
-        <div class="policy-fqa">
-          <a href="/privacy/index.html" class="policy">privacy Policy</a>
-          <a href="/faq/index.html" class="fqa">FQA</a>
+
+    <main class="main-container mt-30">
+      <section class="content-container">
+        <div>
+          <h2 class="text-4xl font-weight-700">
+            <span class="text-gradient-pink-to-blue">원하는 링크</span>를<br />
+            저장하세요
+          </h2>
+          <p class="text-md text-muted mt-3">
+            나중에 릭고싶은 글, 다시보고싶은 영상,<br />
+            사고싶은 옷, 기억하고 싶은 모든 것을<br />
+            한 공간에 저장하세요.
+          </p>
         </div>
-        <div class="socials">
+        <img class="img-box" src="imgs/content1.png" alt="content1" />
+      </section>
+      <section class="content-container">
+        <div>
+          <h2 class="text-4xl font-weight-700">
+            링크를 폴더로<br /><span class="text-gradient-yellow-to-blue"
+              >관리</span
+            >하세요
+          </h2>
+          <p class="text-md text-muted mt-3">
+            나만의 폴더를 무제한으로 만들고<br />
+            다양하게 활용할 수 있습니다.
+          </p>
+        </div>
+        <img class="img-box order-1" src="imgs/content2.png" alt="content2" />
+      </section>
+
+      <section class="content-container">
+        <div>
+          <h2 class="text-4xl font-weight-700">
+            저장한 링크를<br /><span class="text-gradient-blue-to-yellow"
+              >공유</span
+            >해 보세요.
+          </h2>
+          <p class="text-md text-muted mt-3">
+            여러 링크를 폴더에 담고 공유할 수 있습니다.<br />
+            가족, 친구, 동료들에게 쉽고 빠르게 링크를<br />
+            공유해 보세요.
+          </p>
+        </div>
+        <img class="img-box" src="imgs/content3.png" alt="content3" />
+      </section>
+
+      <section class="content-container">
+        <div>
+          <h2 class="text-4xl font-weight-700">
+            저장한 링크를<br /><span class="text-gradient-cyan-to-red"
+              >검색</span
+            >해 보세요
+          </h2>
+          <p class="text-md text-muted mt-3">
+            중요한 정보들을 검색으로 쉽게 찾아보세요.
+          </p>
+        </div>
+        <img class="img-box order-1" src="imgs/content4.png" alt="content4" />
+      </section>
+    </main>
+    <footer class="footer-container bg-black mt-30">
+      <div class="footer-items-container pt-10">
+        <span class="text-md text-muted-2">@codeit - 2023</span>
+        <div class="text-md text-white">
+          <a href="/privacy/index.html" class="mr-5">privacy Policy</a>
+          <a href="/faq/index.html">FQA</a>
+        </div>
+        <div class="flex items-center gap-x-3">
           <a href="https://www.facebook.com/" target="_blank">
             <img src="imgs/facebook.png" alt="facebook" />
           </a>
@@ -116,7 +119,7 @@
             <img src="imgs/insta.png" alt="insta" />
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
